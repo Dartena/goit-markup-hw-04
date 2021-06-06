@@ -211,13 +211,21 @@
   margin-right: 30px;
 }
 
-.adv-icon {
+.adv-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
+}
+
+.adv-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .s2-headings {
@@ -485,6 +493,9 @@
   text-decoration: inherit;
 }
 
+.portf-tile img {
+  max-width: 100%;
+}
 .portf-tile {
   width: 370px;
   padding: 0;

@@ -120,7 +120,7 @@
 .mail,
 .phone {
   display: inline-block;
-  fill: inherit;
+  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -363,14 +363,22 @@
 .client {
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+
   border: solid 1px var(--tm-social-clients);
   border-radius: 4px;
   fill: var(--tm-social-clients);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client svg {
+  width: 106px;
+  height: 60px;
 }
 .client:focus,
 .client:hover {
   border-color: var(--accent-color);
+  /* outline: none; */
   fill: var(--accent-color);
 }
 
